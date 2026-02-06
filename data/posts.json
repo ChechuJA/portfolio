@@ -1,5 +1,35 @@
 [
   {
+    "id": "anatomia-dinamica",
+    "title": "Consejo #1: Anatomía Dinámica - El Secreto de los Superhéroes",
+    "date": "2026-02-06",
+    "content": "**La anatomía no tiene que ser perfecta, tiene que ser expresiva.** 🦸\n\nEn el cómic, especialmente en el género de acción, la exageración es tu mejor amiga. No dibujes un cuerpo realista al 100%, dibuja la **sensación** de poder y movimiento.\n\n**Tips prácticos:**\n- Exagera las poses con líneas de acción claras (una sola línea que atraviese toda la figura)\n- Usa formas geométricas simples antes de los detalles: círculos para cabeza/articulaciones, cilindros para extremidades\n- Los hombros pueden ser más anchos que la realidad (1.5x la cabeza para héroes)\n- No tengas miedo de romper las reglas anatómicas para enfatizar velocidad o fuerza\n\n**Ejercicio:** Dibuja la misma pose 5 veces, cada vez más exagerada. La #3 o #4 suele ser la ideal para cómics."
+  },
+  {
+    "id": "composicion-viñetas",
+    "title": "Consejo #2: Composición de Viñetas - Guía el Ojo del Lector",
+    "date": "2026-02-05",
+    "content": "**Cada viñeta es un mini-cuadro con su propia historia.** 📐\n\nLa composición de viñetas es lo que separa un cómic mediocre de uno profesional. El lector debe saber exactamente dónde mirar primero, segundo y tercero.\n\n**Reglas de oro:**\n- **Regla de los tercios:** Coloca elementos importantes en las intersecciones (no siempre en el centro)\n- **Flujo Z:** Los ojos occidentales leen en Z (arriba-izquierda → arriba-derecha → abajo-izquierda → abajo-derecha)\n- **Espacios negativos:** El espacio vacío es tan importante como lo que dibujas. Permite respirar a la viñeta\n- **Tamaño = Importancia:** Una viñeta grande = momento importante. Úsalo con moderación\n\n**Truco ninja:** Si tienes dudas, haz un thumbnail (miniatura) de la página completa en 5x5cm. Si no se entiende en pequeño, no funciona."
+  },
+  {
+    "id": "expresiones-faciales",
+    "title": "Consejo #3: Expresiones Faciales - Las Cejas lo son Todo",
+    "date": "2026-02-04",
+    "content": "**El 80% de la emoción está en las cejas y los ojos.** 😠😢😄\n\nPuedes dibujar el cuerpo perfecto, pero si la cara no transmite emoción, tu personaje está muerto. Las expresiones son el alma del cómic.\n\n**Guía rápida:**\n- **Enfado:** Cejas en V invertida (\\  /), ojos entrecerrados, boca tensa\n- **Tristeza:** Cejas caídas en los extremos externos (/ \\), ojos húmedos, boca hacia abajo\n- **Sorpresa:** Cejas muy arriba, ojos muy abiertos (muestra el blanco alrededor del iris), boca abierta\n- **Alegría:** Cejas relajadas o ligeramente arqueadas, ojos en forma de media luna, sonrisa amplia\n\n**El truco profesional:** Dibuja primero SOLO cejas y ojos de 10 emociones distintas. Luego añade el resto de la cara. Verás que ya se entendía con esos dos elementos.\n\n**Bonus:** En manga/anime se exageran las expresiones. No tengas miedo de hacer ojos GIGANTES para sorpresa o lágrimas ENORMES para comedia."
+  },
+  {
+    "id": "entintado-limpio",
+    "title": "Consejo #4: Entintado Limpio - Peso y Velocidad de Línea",
+    "date": "2026-02-03",
+    "content": "**No todas las líneas deben tener el mismo grosor.** 🖋️\n\nEl entintado es donde tu dibujo cobra vida. Una línea gruesa o fina en el lugar correcto puede transmitir peso, profundidad y movimiento.\n\n**Teoría del peso de línea:**\n- **Líneas gruesas:** Sombras, contornos externos, objetos cercanos, elementos pesados\n- **Líneas finas:** Detalles internos, arrugas, objetos lejanos, elementos delicados\n- **Línea variable:** La presión cambia mientras dibujas = líneas orgánicas y dinámicas\n\n**Mi proceso de entintado:**\n1. **Contornos externos primero** (línea gruesa) para separar personaje del fondo\n2. **Detalles faciales** (línea media) con mucho cuidado\n3. **Ropa y texturas** (línea fina a media)\n4. **Sombras negras** (relleno completo) para dar dramatismo\n\n**Herramientas:** G-Pen para líneas dinámicas, rotulador de punta fina (0.3-0.5mm) para detalles, pincel para sombras.\n\n**Regla definitiva:** Si no puedes distinguir el primer plano del fondo, tu entintado necesita más contraste de línea."
+  },
+  {
+    "id": "storytelling-visual",
+    "title": "Consejo #5: Storytelling Visual - Muestra, No Expliques",
+    "date": "2026-02-02",
+    "content": "**El cómic es un medio visual. Si necesitas texto para explicarlo, algo falla.** 📖\n\nEl mejor cómic es aquel donde puedes entender la historia incluso sin leer los bocadillos. Las imágenes deben narrar por sí solas.\n\n**Técnicas de storytelling visual:**\n- **Lenguaje corporal:** Un personaje cabizbajo con hombros caídos dice \"triste\" sin palabras\n- **Ángulos de cámara:** Vista desde abajo = poder/amenaza. Vista desde arriba = vulnerabilidad\n- **Transiciones:** No dibujes cada segundo. Salta de acción a reacción, el cerebro rellena lo que falta\n- **Símbolos visuales:** Lluvia = tristeza, sol = esperanza, sombras alargadas = peligro\n\n**Ejercicio maestro:** Dibuja una página de 4-6 viñetas contando una historia **sin diálogos:**\n- Personaje despierta\n- Ve algo preocupante por la ventana\n- Sale corriendo\n- Encuentra a alguien\n- Resolución\n\nSi alguien puede entender toda la historia sin palabras, ¡lo lograste!\n\n**Pro tip:** Lee manga japonés. Maestros como Takehiko Inoue (Vagabond) pueden transmitir emoción en páginas completas sin un solo diálogo."
+  },
+  {
     "id": "welcome",
     "title": "Welcome to my new portfolio!",
     "date": "2024-02-01",

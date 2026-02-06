@@ -1,42 +1,62 @@
 [
   {
     "id": "review-1",
-    "name": "Sarah M.",
-    "role": "Game Developer",
-    "avatar": "https://placehold.co/80x80/ff1744/fff?text=SM",
+    "name": "Laura Martínez",
+    "role": "Desarrolladora Indie",
+    "avatar": "https://placehold.co/80x80/ff1744/fff?text=LM",
     "rating": 5,
-    "comment": "Amazing work! The character designs exceeded my expectations. Communication was excellent throughout the project.",
-    "project": "Character Design",
-    "date": "2024-01"
+    "comment": "Marcos creó los diseños de personajes para mi videojuego y superó todas mis expectativas. Su estilo manga con toques occidentales es único. Diego implementó el portfolio con una velocidad increíble. ¡Equipo 10/10!",
+    "project": "Character Design - 'Neon Souls'",
+    "date": "2026-01"
   },
   {
     "id": "review-2",
-    "name": "Mike Chen",
-    "role": "Comic Writer",
-    "avatar": "https://placehold.co/80x80/00e5ff/fff?text=MC",
+    "name": "Carlos Ruiz",
+    "role": "Editor - Cómics Indie",
+    "avatar": "https://placehold.co/80x80/00e5ff/fff?text=CR",
     "rating": 5,
-    "comment": "Incredible attention to detail. The manga-style pages look exactly like what I envisioned. Will definitely work together again!",
-    "project": "Comic Pages",
-    "date": "2023-12"
+    "comment": "Trabajar con Marcos fue un placer. Su entintado es limpio, sus composiciones dinámicas y siempre entrega a tiempo. Además, el uso de IA para bocetos rápidos aceleró muchísimo la pre-producción sin perder calidad.",
+    "project": "Serie de Cómics - 'Sombras Urbanas'",
+    "date": "2025-12"
   },
   {
     "id": "review-3",
-    "name": "Alex Rivera",
-    "role": "Indie Dev",
-    "avatar": "https://placehold.co/80x80/ffd600/333?text=AR",
+    "name": "Ana Beltrán",
+    "role": "Directora Creativa",
+    "avatar": "https://placehold.co/80x80/ffd600/333?text=AB",
     "rating": 5,
-    "comment": "Fast turnaround and professional quality. The cyberpunk aesthetic was perfect for our game. Highly recommended!",
-    "project": "Game Assets",
-    "date": "2024-02"
+    "comment": "Necesitaba un sitio web para mi agencia de ilustración y Diego lo construyó desde cero en una semana. Responsive, rápido, optimizado para SEO. Y el chatbot que integró nos ahorra horas respondiendo preguntas frecuentes.",
+    "project": "Web Development - Portfolio Agencia",
+    "date": "2025-11"
   },
   {
     "id": "review-4",
-    "name": "Emma Thompson",
-    "role": "Author",
-    "avatar": "https://placehold.co/80x80/7c4dff/fff?text=ET",
+    "name": "Miguel Ángel Torres",
+    "role": "Autor de Novela Gráfica",
+    "avatar": "https://placehold.co/80x80/7c4dff/fff?text=MT",
     "rating": 5,
-    "comment": "Beautiful cover art that captured the essence of my novel perfectly. Very responsive and easy to work with.",
-    "project": "Book Cover",
-    "date": "2023-11"
+    "comment": "Marcos ilustró la portada de mi novela gráfica y fue exactamente lo que visualicé. Su comprensión de narrativa visual y expresiones faciales es brutal. La comunicación fue fluida y los ajustes rapidísimos.",
+    "project": "Portada - 'El Último Samurái Digital'",
+    "date": "2025-10"
+  },
+  {
+    "id": "review-5",
+    "name": "Sofía Ramírez",
+    "role": "Community Manager",
+    "avatar": "https://placehold.co/80x80/9c27b0/fff?text=SR",
+    "rating": 5,
+    "comment": "Contraté a Diego para añadir funcionalidades con IA a nuestro sitio. Implementó un sistema de búsqueda inteligente y automatizaciones que nos ahorraron 15 horas semanales. Súper profesional y paciente explicando todo.",
+    "project": "Integración IA - Plataforma E-commerce",
+    "date": "2025-09"
+  },
+  {
+    "id": "review-6",
+    "name": "David López",
+    "role": "Youtuber / Streamer",
+    "avatar": "https://placehold.co/80x80/ff9800/fff?text=DL",
+    "rating": 5,
+    "comment": "Marcos diseñó mi avatar y emotes para Twitch con estilo manga. La gente enloquece con los diseños. Además, Diego optimizó mi web para que cargue rapidísimo. Hermanos talentosos que entienden las necesidades de creadores digitales.",
+    "project": "Avatar + Emotes Twitch + Web",
+    "date": "2025-08"
   }
 ]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cyberpunk-girl",
+    "title": "Neon Nights",
+    "description": "A cyberpunk character study exploring neon lighting and reflections.",
+    "image": "https://placehold.co/800x1200/1a1a1a/00ff00?text=Neon+Nights",
+    "categories": ["character", "color"],
+    "date": "2023-10-15",
+    "tools": ["Procreate", "iPad Pro"]
+  },
+  {
+    "id": "fantasy-landscape",
+    "title": "Whispering Woods",
+    "description": "Environment concept art for an upcoming graphic novel.",
+    "image": "https://placehold.co/1200x800/1a1a1a/ff0000?text=Whispering+Woods",
+    "categories": ["sketches", "ink"],
+    "date": "2023-11-02",
+    "tools": ["Pen and Ink", "Photoshop"]
+  },
+  {
+    "id": "comic-page-1",
+    "title": "Chapter 1 - Page 1",
+    "description": "Opening sequence for 'The Last Starship'.",
+    "image": "https://placehold.co/800x1200/ffffff/000000?text=Comic+Page+1",
+    "categories": ["comics", "ink"],
+    "date": "2023-09-20",
+    "tools": ["Clip Studio Paint"]
+  },
+  {
+    "id": "hero-sketch",
+    "title": "Warrior Concept",
+    "description": "Rough sketch for a main protagonist.",
+    "image": "https://placehold.co/600x600/eeeeee/333333?text=Warrior+Sketch",
+    "categories": ["sketches", "character"],
+    "date": "2023-12-05",
+    "tools": ["Pencil"]
+  },
+  {
+    "id": "mech-suit",
+    "title": "Unit 734",
+    "description": "Mecha design focusing on functional joints.",
+    "image": "https://placehold.co/800x1000/222222/00ffff?text=Unit+734",
+    "categories": ["color", "character"],
+    "date": "2024-01-10",
+    "tools": ["Blender", "Photoshop"]
+  }
+]

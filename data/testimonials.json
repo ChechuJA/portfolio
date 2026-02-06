@@ -1,0 +1,42 @@
+[
+  {
+    "id": "review-1",
+    "name": "Sarah M.",
+    "role": "Game Developer",
+    "avatar": "https://placehold.co/80x80/ff1744/fff?text=SM",
+    "rating": 5,
+    "comment": "Amazing work! The character designs exceeded my expectations. Communication was excellent throughout the project.",
+    "project": "Character Design",
+    "date": "2024-01"
+  },
+  {
+    "id": "review-2",
+    "name": "Mike Chen",
+    "role": "Comic Writer",
+    "avatar": "https://placehold.co/80x80/00e5ff/fff?text=MC",
+    "rating": 5,
+    "comment": "Incredible attention to detail. The manga-style pages look exactly like what I envisioned. Will definitely work together again!",
+    "project": "Comic Pages",
+    "date": "2023-12"
+  },
+  {
+    "id": "review-3",
+    "name": "Alex Rivera",
+    "role": "Indie Dev",
+    "avatar": "https://placehold.co/80x80/ffd600/333?text=AR",
+    "rating": 5,
+    "comment": "Fast turnaround and professional quality. The cyberpunk aesthetic was perfect for our game. Highly recommended!",
+    "project": "Game Assets",
+    "date": "2024-02"
+  },
+  {
+    "id": "review-4",
+    "name": "Emma Thompson",
+    "role": "Author",
+    "avatar": "https://placehold.co/80x80/7c4dff/fff?text=ET",
+    "rating": 5,
+    "comment": "Beautiful cover art that captured the essence of my novel perfectly. Very responsive and easy to work with.",
+    "project": "Book Cover",
+    "date": "2023-11"
+  }
+]

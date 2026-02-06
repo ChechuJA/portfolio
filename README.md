@@ -1,168 +1,105 @@
-# Comic Illustrator Portfolio
+# Comic Artist Portfolio
 
-A modern, responsive portfolio website for showcasing comic illustrations and artwork. Built with pure HTML, CSS, and JavaScript - no frameworks required! Perfect for hosting on GitHub Pages.
+A customizable, static portfolio website designed for illustrators and comic artists. Built with vanilla HTML, CSS, and JavaScript.
 
-## ✨ Features
+## 🌟 Features
 
-- **Dynamic Gallery**: All artwork is loaded from a JSON file - no HTML editing required to add new pieces
-- **Category Filtering**: Filter artwork by characters, scenes, concepts, or view all
-- **Lightbox Viewer**: Click any artwork to view it in full-screen with navigation
-- **Responsive Design**: Looks great on desktop, tablet, and mobile devices
-- **Easy Maintenance**: Simply edit `artwork.json` to add, remove, or update artwork
-- **No Backend Required**: Pure static site, perfect for GitHub Pages
+*   **Dynamic Content**: All artwork, posts, and products are loaded from JSON files.
+*   **No Build Step**: Just open `index.html` or host on GitHub Pages.
+*   **Responsive**: Mobile-first design that looks great on any device.
+*   **Dark/Light Mode**: User preference saved in local storage.
+*   **Gallery Filtering**: Filter artworks by category (Sketches, Ink, Color, etc.).
+*   **Modal Viewer**: Full-screen image viewer with keyboard navigation.
+*   **SEO Friendly**: Basic meta tagging and semantic HTML.
 
-## 🚀 Quick Start
+## 📂 Folder Structure
 
-### View the Site Locally
+```
+/
+├── index.html          # Main entry point
+├── /css/
+│   └── styles.css      # All styling
+├── /js/
+│   └── script.js       # Logic for loading data and interactivity
+├── README.md           # This file
+├── /data/
+│   ├── artworks.json   # Artwork definitions
+│   ├── posts.json      # Devlog posts
+│   └── products.json   # Store items
+└── /assets/
+    ├── /artworks/      # Place your artwork images here
+    └── /posts/         # Images for blog posts
+```
 
-1. Clone this repository
-2. Open `index.html` in your web browser
-3. That's it! No build process or dependencies needed
+## 🚀 How to Add Content
 
-### Deploy to GitHub Pages
-
-1. Go to your repository settings on GitHub
-2. Navigate to "Pages" in the left sidebar
-3. Under "Source", select the branch you want to deploy (usually `main`)
-4. Click "Save"
-5. Your site will be live at `https://[username].github.io/[repository-name]`
-
-## 📝 Adding New Artwork
-
-Adding new artwork is as simple as editing a JSON file! Here's how:
-
-### Step 1: Prepare Your Image
-
-1. Upload your artwork image to an image hosting service (like GitHub itself, Imgur, or any CDN)
-2. Get the direct image URL
-
-### Step 2: Edit artwork.json
-
-Open `artwork.json` and add a new entry to the array:
+### Adding Artwork
+1.  Upload your image to `/assets/artworks/`.
+2.  Open `/data/artworks.json`.
+3.  Add a new entry to the array:
 
 ```json
 {
-    "id": 10,
-    "title": "Your Artwork Title",
-    "description": "A detailed description of your artwork",
-    "image": "https://your-image-url.com/image.jpg",
-    "category": "characters",
-    "date": "2024-06-15"
+  "id": "unique-id-for-url",
+  "title": "My Awesome Art",
+  "description": "Description of the piece.",
+  "image": "assets/artworks/my-image.jpg",
+  "categories": ["color", "character"],
+  "date": "2024-02-06",
+  "tools": ["Procreate"]
 }
 ```
 
-### Field Descriptions:
+*   **categories**: Available tags are `sketches`, `ink`, `color`, `comics`, `character`. You can add more but need to update the buttons in `index.html`.
 
-- **id**: Unique number for the artwork (increment from the last ID)
-- **title**: The name/title of your artwork
-- **description**: A description that appears in the lightbox view
-- **image**: Direct URL to your image file
-- **category**: One of: `characters`, `scenes`, or `concepts`
-- **date**: Date in YYYY-MM-DD format
+### Adding Devlog Posts
+1.  Open `/data/posts.json`.
+2.  Add a new object:
 
-### Step 3: Save and Deploy
+```json
+{
+  "id": "post-id",
+  "title": "Update Title",
+  "date": "2024-02-06",
+  "content": "Write your content here. Double newline for new paragraph.\n\nLike this."
+}
+```
 
-1. Save `artwork.json`
-2. Commit and push to GitHub
-3. Your new artwork will automatically appear on the site!
+### Adding Store Items
+1.  Open `/data/products.json`.
+2.  Add a new item:
 
-## 🎨 Customization
+```json
+{
+  "id": "item-id",
+  "name": "Art Print",
+  "price": "$25.00",
+  "image": "path/to/image.jpg",
+  "link": "https://gumroad.com/..."
+}
+```
 
-### Updating Site Information
+## 🛠 Customization
 
-Edit `index.html` to customize:
-
-- **Site Title**: Change the `<title>` tag and `.logo` text
-- **Hero Section**: Update the welcome message in the `.hero` section
-- **About Section**: Modify the about text to tell your story
-- **Contact Links**: Update email and social media links in the `.contact-section`
-
-### Changing Colors
-
-Edit `styles.css` and modify the CSS variables at the top:
+### Colors & Fonts
+Open `styles.css` and modify the `:root` variables at the top to change the theme colors (e.g., `--accent-color`).
 
 ```css
 :root {
-    --primary-color: #6366f1;  /* Main theme color */
-    --secondary-color: #8b5cf6; /* Secondary accent color */
-    /* ... more colors ... */
+    --accent-color: #ff3e3e; /* Change this! */
 }
 ```
 
-### Adding New Categories
+## 🌐 How to Deploy on GitHub Pages
 
-1. Add a new filter button in `index.html`:
-```html
-<button class="filter-btn" data-filter="yourcategory">Your Category</button>
-```
+1.  Push this repository to GitHub.
+2.  Go to the repository **Settings**.
+3.  Click on **Pages** in the left sidebar.
+4.  Under **Build and deployment**, select **Source** -> **Deploy from a branch**.
+5.  Select **main** (or master) branch and root `/` folder.
+6.  Click **Save**.
+7.  Wait a minute, and your site will be live at `https://[username].github.io/[repo-name]/`.
 
-2. Use the new category name in `artwork.json`:
-```json
-"category": "yourcategory"
-```
+## 📝 License
 
-That's it! The filtering will work automatically.
-
-## 📁 Project Structure
-
-```
-portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # All styling and responsive design
-├── script.js           # Gallery functionality and interactivity
-├── artwork.json        # Your artwork data (THIS IS WHERE YOU ADD NEW PIECES)
-└── README.md          # This file
-```
-
-## 🛠️ Technical Details
-
-- **No Build Process**: Just HTML, CSS, and JavaScript - edit and deploy instantly
-- **No Dependencies**: No npm, webpack, or any other tools required
-- **Vanilla JavaScript**: Modern ES6+ JavaScript with no frameworks
-- **Responsive Grid**: CSS Grid for automatic responsive layouts
-- **Lazy Loading**: Images load as needed for better performance
-- **Keyboard Navigation**: Arrow keys to navigate in lightbox, Escape to close
-
-## 🌐 Browser Support
-
-Works on all modern browsers:
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 📄 License
-
-Feel free to use this template for your own portfolio! Customize it to make it your own.
-
-## 💡 Tips
-
-1. **Image Optimization**: Compress your images before uploading (use tools like TinyPNG)
-2. **Consistent Sizing**: Try to keep artwork images at similar aspect ratios for a clean grid
-3. **Descriptive Titles**: Use clear, descriptive titles that help viewers understand your work
-4. **Regular Updates**: Keep your portfolio fresh by adding new artwork regularly
-5. **Backup artwork.json**: Keep a backup of your artwork.json file before making changes
-
-## 🐛 Troubleshooting
-
-**Images not loading?**
-- Check that image URLs are direct links (not webpage links)
-- Ensure images are publicly accessible
-- Try opening the image URL directly in your browser
-
-**Gallery not displaying?**
-- Make sure `artwork.json` is valid JSON (use a JSON validator)
-- Check browser console for error messages (F12)
-- Ensure all commas are in the right places in the JSON
-
-**Filters not working?**
-- Verify category names in `artwork.json` match the filter buttons exactly
-- Category names are case-sensitive
-
-## 📧 Questions?
-
-If you have questions about using this portfolio template, feel free to open an issue on GitHub!
-
----
-
-Made with ❤️ for comic illustrators and artists everywhere
+This project is open source. Feel free to use it for your own portfolio!

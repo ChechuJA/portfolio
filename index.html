@@ -3,114 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comic Illustrator Portfolio</title>
-    <meta name="description" content="Portfolio showcasing original comic illustrations and artwork">
-    <link rel="stylesheet" href="styles.css">
+    <title>Artist Portfolio | Comic Illustrator & Character Designer</title>
+    <meta name="description" content="Explore the manga-style portfolio of a professional comic illustrator specializing in character design, digital art, and dynamic storytelling. View gallery, commissions, and original artwork.">
+    <meta name="keywords" content="comic artist, manga, illustrator, character design, digital art, portfolio, commissions">
+    <meta name="author" content="Artist Portfolio">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yoursite.github.io/portfolio/">
+    <meta property="og:title" content="Artist Portfolio | Comic Illustrator">
+    <meta property="og:description" content="Professional comic illustrator & character designer portfolio.">
+    <meta property="og:image" content="https://yoursite.github.io/portfolio/assets/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Artist Portfolio | Comic Illustrator">
+    <meta name="twitter:description" content="Professional comic illustrator & character designer portfolio.">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ff1744">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">Comic Artist Portfolio</h1>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="spinner-overlay">
+        <div class="manga-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-text">⚡ LOADING ⚡</div>
         </div>
-    </header>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">Welcome to My Artistic World</h2>
-            <p class="hero-subtitle">Original comic illustrations and character designs</p>
-            <a href="#gallery" class="btn btn-primary">View Gallery</a>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+        ⬆️
+    </button>
+    
+    <!-- Keyboard Shortcuts Helper -->
+    <button id="shortcuts-toggle" class="shortcuts-toggle" aria-label="Keyboard shortcuts" title="Press ? for shortcuts">
+        ⌨️
+    </button>
+
+    <!-- Chatbot Assistant -->
+    <button id="chat-toggle" class="chat-toggle" aria-label="Open chat assistant" title="Ask me anything!">
+        💬
+    </button>
+
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <div class="chat-avatar">🎨</div>
+            <div class="chat-title">
+                <h3>ArtBot</h3>
+                <p class="chat-status">● Online</p>
+            </div>
+            <button class="chat-close" aria-label="Close chat">✕</button>
         </div>
-    </section>
+        <div class="chat-messages" id="chat-messages">
+            <div class="bot-message">
+                <div class="message-bubble">
+                    👋 Hi! I'm ArtBot, your portfolio assistant!<br>
+                    Ask me about artworks, commissions, or anything else!
+                </div>
+            </div>
+        </div>
+        <form class="chat-input-form" id="chat-form">
+            <input type="text" id="chat-input" placeholder="Type your question..." autocomplete="off" required>
+            <button type="submit" aria-label="Send message">▶</button>
+        </form>
+    </div>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <h2 class="section-title">Gallery</h2>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" style="font-size: 1.8rem; text-shadow: 3px 3px 0 rgba(255,23,68,0.3);">⚡ARTIST<span>.LOG</span>⚡</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#devlog">Devlog</a></li>
+                <li><a href="#store">Store</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu">×</button>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#devlog">Devlog</a></li>
+            <li><a href="#store">Store</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <main id="app" role="main" aria-label="Main content">
+        
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <header class="hero">
+                <div style="font-size: 4rem; opacity: 0.1; position: absolute; left: 5%; top: 20%; transform: rotate(-15deg);">★</div>
+                <div style="font-size: 3rem; opacity: 0.1; position: absolute; right: 10%; top: 30%; transform: rotate(25deg);">✦</div>
+                <h1>Bringing Stories<br>to <span class="accent">Life</span></h1>
+                <p style="font-weight: 600; font-size: 1.3rem;">✦ Comic Illustrator & Character Designer ✦</p>
+                <a href="#gallery" class="btn">View Portfolio</a>
+            </header>
             
-            <!-- Filter Buttons -->
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="characters">Characters</button>
-                <button class="filter-btn" data-filter="scenes">Scenes</button>
-                <button class="filter-btn" data-filter="concepts">Concepts</button>
-            </div>
+            <section class="latest-works">
+                <h2 style="display: inline-block; padding: 10px 25px; background: var(--accent-color); color: white; border: 4px solid black; box-shadow: 5px 5px 0 rgba(0,0,0,0.3); transform: rotate(-1deg);">⚡ Latest Artworks ⚡</h2>
+                <div id="latest-grid" class="grid-preview">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+            
+            <!-- Stats Counter -->
+            <section class="stats-section">
+                <div class="stat-card" data-target="50">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">⚡ Artworks</div>
+                </div>
+                <div class="stat-card" data-target="100">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">🎨 Commissions</div>
+                </div>
+                <div class="stat-card" data-target="5">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">📅 Years</div>
+                </div>
+                <div class="stat-card" data-target="1000">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">⭐ Followers</div>
+                </div>
+            </section>
+        </section>
 
-            <!-- Gallery Grid -->
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Artwork items will be loaded dynamically from JSON -->
+        <!-- Gallery Section -->
+        <section id="gallery" class="page-section">
+            <header class="section-header">
+                <h2 style="display: inline-block; padding: 10px 30px; background: white; border: 4px solid black; box-shadow: 6px 6px 0 rgba(0,0,0,0.2); transform: rotate(-1deg);">⚡ Gallery ⚡</h2>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="gallery-search" placeholder="🔍 Search artworks..." aria-label="Search artworks">
+                    <span class="search-results-count" id="search-count"></span>
+                </div>
+                
+                <!-- View Toggle -->
+                <div class="view-controls">
+                    <button class="view-toggle active" data-view="grid" title="Grid View">⊞</button>
+                    <button class="view-toggle" data-view="list" title="List View">☰</button>
+                    <button id="show-favorites" class="view-toggle" title="Show Favorites">❤️ <span class="fav-count">0</span></button>
+                </div>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="sketches">Sketches</button>
+                    <button class="filter-btn" data-filter="ink">Ink</button>
+                    <button class="filter-btn" data-filter="color">Color</button>
+                    <button class="filter-btn" data-filter="comics">Comics</button>
+                    <button class="filter-btn" data-filter="character">Character</button>
+                </div>
+            </header>
+            <div id="gallery-grid" class="masonry-grid">
+                <!-- Loaded via JS -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate comic illustrator with a love for bringing characters and stories to life through visual art. My work spans from character design to full scene illustrations, each piece crafted with attention to detail and storytelling.</p>
-                    <p>With years of experience in digital illustration, I specialize in creating dynamic compositions that capture emotion and movement. Whether it's a single character portrait or a complex scene, my goal is always to create artwork that resonates with viewers.</p>
+        <!-- About Section -->
+        <section id="about" class="page-section">
+            <header class="section-header">
+                <h2 style="display: inline-block; padding: 10px 30px; background: white; border: 4px solid black; box-shadow: 6px 6px 0 rgba(0,0,0,0.2); transform: rotate(-1deg);">👤 About Me</h2>
+            </header>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://placehold.co/400x400/333/fff?text=Artist+Photo" alt="Artist Portrait" loading="lazy" width="400" height="400">
+                </div>
+                <div class="about-content">
+                    <h2 style="border-bottom: 4px solid var(--accent-color); display: inline-block; padding-bottom: 5px;">About Me</h2>
+                    <p>Hello! I'm a freelance comic artist based in the cloud. I specialize in character design and dynamic storytelling. My work is inspired by cyberpunk aesthetics and classic noir comics.</p>
+                    
+                    <p>📍 Based in: <strong>Tokyo / Remote</strong><br>
+                    🎨 Available for: <strong>Commissions, Collaborations, Freelance</strong><br>
+                    💼 Experience: <strong>5+ years in digital illustration</strong></p>
+                    
+                    <h3 style="margin-top: 2rem;">⚡ Tools & Software</h3>
+                    <ul class="tools-list">
+                        <li>🖌️ Clip Studio Paint</li>
+                        <li>📱 Procreate (iPad Pro)</li>
+                        <li>🎨 Photoshop CC</li>
+                        <li>🎭 Blender (3D concepts)</li>
+                        <li>✒️ Traditional Ink & Markers</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem;">📬 Get in Touch</h3>
+                    <div class="contact-info">
+                        <p><strong>✉️ Email:</strong> <a href="mailto:artist@portfolio.com" style="color: var(--accent-color); font-weight: 600;">artist@portfolio.com</a></p>
+                        <p><strong>💬 Response time:</strong> Usually within 24-48h</p>
+                    </div>
+
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="https://twitter.com/artist" target="_blank" class="social-btn">🐦 Twitter / X</a>
+                        <a href="https://instagram.com/artist" target="_blank" class="social-btn">📸 Instagram</a>
+                        <a href="https://artstation.com/artist" target="_blank" class="social-btn">🎨 ArtStation</a>
+                        <a href="https://patreon.com/artist" target="_blank" class="social-btn">💖 Patreon</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>Interested in commissioning artwork or have a project in mind? I'd love to hear from you!</p>
-                <div class="contact-links">
-                    <a href="mailto:artist@example.com" class="contact-link">
-                        <span class="contact-icon">✉</span>
-                        artist@example.com
-                    </a>
-                    <a href="https://twitter.com/artist" target="_blank" class="contact-link">
-                        <span class="contact-icon">🐦</span>
-                        Twitter
-                    </a>
-                    <a href="https://instagram.com/artist" target="_blank" class="contact-link">
-                        <span class="contact-icon">📷</span>
-                        Instagram
-                    </a>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center; font-size: 3rem; margin-bottom: 2rem;">💖 Client Love</h2>
+                <div id="testimonials-grid" class="testimonials-grid">
+                    <!-- Loaded via JS -->
                 </div>
             </div>
+        </section>
+
+        <!-- Devlog Section -->
+        <section id="devlog" class="page-section">
+            <header class="section-header">
+                <h2 style="display: inline-block; padding: 10px 30px; background: white; border: 4px solid black; box-shadow: 6px 6px 0 rgba(0,0,0,0.2); transform: rotate(1deg);">📝 Devlog</h2>
+                <p style="font-weight: 600;">Behind the scenes and updates.</p>
+            </header>
+            <div id="posts-list" class="posts-container">
+                <!-- Loaded via JS -->
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter-section">
+            <div class="newsletter-container">
+                <div class="speech-bubble">
+                    <h2>📬 Join the Adventure!</h2>
+                    <p>Get exclusive art updates, behind-the-scenes content, and early access to new releases!</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email..." required aria-label="Email address">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">✨ No spam, unsubscribe anytime. Promise!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Section -->
+        <section id="store" class="page-section">
+            <header class="section-header">
+                <h2 style="display: inline-block; padding: 10px 30px; background: white; border: 4px solid black; box-shadow: 6px 6px 0 rgba(0,0,0,0.2); transform: rotate(-1deg);">🛍️ Store</h2>
+                <p style="font-weight: 600;">Originals, prints and digital goodies.</p>
+            </header>
+            <div id="products-grid" class="products-grid">
+                <!-- Loaded via JS -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Artwork Modal -->
+    <div id="artwork-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">×</button>
+            <button class="nav-btn prev-btn" aria-label="Previous image">‹</button>
+            
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="">
+            </div>
+            
+            <div class="modal-info">
+                <h2 id="modal-title">Title</h2>
+                <p style="font-size: 0.75rem; opacity: 0.6; margin-bottom: 0.5rem;">⌨️ Use ← → arrow keys or ESC to close</p>
+                <p class="modal-meta">
+                    <span id="modal-date">Date</span> • 
+                    <span id="modal-tools">Tools</span>
+                </p>
+                <p id="modal-desc">Description</p>
+                <div id="modal-tags" class="tags"></div>
+                <button class="share-btn" id="share-artwork" style="margin-top: 1rem;">
+                    📤 Share Artwork
+                </button>
+            </div>
+
+            <button class="nav-btn next-btn" aria-label="Next image">›</button>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Comic Artist Portfolio. All rights reserved.</p>
+    <footer class="manga-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>⚡ Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#store">Store</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>📬 Contact</h3>
+                <p><a href="mailto:artist@portfolio.com">artist@portfolio.com</a></p>
+                <div class="footer-socials">
+                    <a href="#" target="_blank" title="Twitter">🐦</a>
+                    <a href="#" target="_blank" title="Instagram">📸</a>
+                    <a href="#" target="_blank" title="ArtStation">🎨</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>ℹ️ About This Site</h3>
+                <p style="font-size: 0.9rem; line-height: 1.8;">
+                    <strong>Design & Development:</strong><br>
+                    Custom static portfolio<br>
+                    Built with vanilla HTML/CSS/JS<br>
+                    No frameworks, no build tools<br>
+                    Optimized for GitHub Pages
+                </p>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+                    🛠️ <strong>Maintained by:</strong> [Artist Name]<br>
+                    📅 <strong>Last updated:</strong> February 2026
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024-2026 Artist Portfolio. All artwork rights reserved.</p>
+                <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.5rem;">
+                    Made with ❤️ and ☕ | Manga-inspired design | Static & Fast
+                </p>
+            </div>
         </div>
     </footer>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <div class="lightbox-content">
-            <img src="" alt="" id="lightboxImage">
-            <div class="lightbox-info">
-                <h3 id="lightboxTitle"></h3>
-                <p id="lightboxDescription"></p>
-                <p class="lightbox-date" id="lightboxDate"></p>
-            </div>
-        </div>
-        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
-        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sticker-pack-1",
+    "name": "Cyberpunk Sticker Pack",
+    "price": "$10.00",
+    "image": "https://placehold.co/400x400/1a1a1a/00ff00?text=Stickers",
+    "link": "#"
+  },
+  {
+    "id": "artbook-2023",
+    "name": "2023 Art Collection PDF",
+    "price": "$15.00",
+    "image": "https://placehold.co/400x500/ffffff/000000?text=Artbook",
+    "link": "#"
+  },
+  {
+    "id": "print-neon",
+    "name": "Neon Nights - A3 Print",
+    "price": "$25.00",
+    "image": "https://placehold.co/400x600/1a1a1a/ff00ff?text=Print",
+    "link": "#"
+  }
+]

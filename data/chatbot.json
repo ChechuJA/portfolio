@@ -1,0 +1,62 @@
+{
+  "greetings": [
+    "hello", "hi", "hey", "hola", "greetings", "good morning", "good afternoon"
+  ],
+  "responses": [
+    {
+      "keywords": ["commission", "price", "hire", "work", "cost", "how much"],
+      "answer": "💰 I'm available for commissions! Prices vary by complexity:\n\n• Character sketch: $50-100\n• Full illustration: $150-300\n• Comic page: $200-400\n\nContact me at artist@portfolio.com for a quote!",
+      "category": "commission"
+    },
+    {
+      "keywords": ["contact", "email", "reach", "message", "talk"],
+      "answer": "📧 You can reach me at:\n\nEmail: artist@portfolio.com\nTwitter: @artist\nInstagram: @artist\n\nI usually respond within 24-48 hours!",
+      "category": "contact"
+    },
+    {
+      "keywords": ["tools", "software", "program", "use", "draw", "create"],
+      "answer": "🛠️ My main tools are:\n\n• Clip Studio Paint (primary)\n• Procreate on iPad Pro\n• Photoshop for editing\n• Blender for 3D concepts\n• Traditional ink & markers\n\nI love combining digital and traditional techniques!",
+      "category": "tools"
+    },
+    {
+      "keywords": ["style", "genre", "type", "kind", "aesthetic"],
+      "answer": "🎨 My style is heavily influenced by:\n\n• Cyberpunk aesthetics\n• Classic noir comics\n• Japanese manga\n• Dynamic character design\n\nI specialize in character-focused storytelling!",
+      "category": "style"
+    },
+    {
+      "keywords": ["experience", "years", "long", "when", "started"],
+      "answer": "⏰ I've been working as a professional illustrator for 5+ years!\n\nStarted as a hobbyist, then went full-time freelance in 2019. I've completed 100+ commissions and worked on several indie comic projects.",
+      "category": "experience"
+    },
+    {
+      "keywords": ["portfolio", "work", "art", "gallery", "see", "show"],
+      "answer": "🖼️ Check out my gallery section to see all my work!\n\nYou can filter by:\n• Sketches\n• Ink work\n• Color illustrations\n• Comics\n• Character designs\n\nClick on any piece to see details!",
+      "category": "portfolio"
+    },
+    {
+      "keywords": ["buy", "purchase", "store", "print", "product"],
+      "answer": "🛍️ Yes! Check out the Store section for:\n\n• Art prints\n• Sticker packs\n• Digital artbooks\n• Commissions\n\nI'm also setting up a Patreon for exclusive content!",
+      "category": "store"
+    },
+    {
+      "keywords": ["social", "follow", "twitter", "instagram", "media"],
+      "answer": "📱 Follow me on:\n\n🐦 Twitter/X: @artist\n📸 Instagram: @artist\n🎨 ArtStation: artstation.com/artist\n💖 Patreon: patreon.com/artist\n\nI post WIPs and updates regularly!",
+      "category": "social"
+    },
+    {
+      "keywords": ["process", "workflow", "how", "make", "create"],
+      "answer": "✏️ My typical workflow:\n\n1. Rough thumbnail sketches\n2. Detailed pencils\n3. Clean line art (digital ink)\n4. Base colors\n5. Shading & lighting\n6. Final effects\n\nCheck the Devlog for process videos!",
+      "category": "process"
+    },
+    {
+      "keywords": ["available", "open", "slots", "queue"],
+      "answer": "📅 Yes, I'm currently accepting commissions!\n\nTurnaround time: 2-4 weeks depending on complexity.\n\nEmail artist@portfolio.com with:\n• Description of what you want\n• Reference images\n• Deadline (if any)",
+      "category": "availability"
+    }
+  ],
+  "fallback": [
+    "🤔 Hmm, I'm not sure about that. Try asking about commissions, my tools, or how to contact me!",
+    "💭 That's a good question! I don't have that info yet. Email artist@portfolio.com for specific inquiries!",
+    "🎨 I specialize in art questions! Ask me about commissions, my process, or available work!"
+  ]
+}

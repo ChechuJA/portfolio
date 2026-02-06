@@ -1,0 +1,14 @@
+[
+  {
+    "id": "welcome",
+    "title": "Welcome to my new portfolio!",
+    "date": "2024-02-01",
+    "content": "I finally migrated my portfolio to a static site hosted on GitHub Pages. It's much faster and easier to maintain. Stay tuned for new artwork updates every week!"
+  },
+  {
+    "id": "inking-process",
+    "title": "My Inking Process",
+    "date": "2024-01-15",
+    "content": "A lot of people ask me about my inking tools. I primarily use a **G-Pen nib** for dynamic lines and **Microns** for detailed background work. \n\nHere is a quick breakdown of my workflow:\n1. Rough pencils (blue lead)\n2. Tight pencils\n3. Inking main characters\n4. Backgrounds"
+  }
+]

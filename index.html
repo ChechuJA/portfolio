@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Illustrator Portfolio</title>
+    <meta name="description" content="Portfolio showcasing original comic illustrations and artwork">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Comic Artist Portfolio</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to My Artistic World</h2>
+            <p class="hero-subtitle">Original comic illustrations and character designs</p>
+            <a href="#gallery" class="btn btn-primary">View Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="characters">Characters</button>
+                <button class="filter-btn" data-filter="scenes">Scenes</button>
+                <button class="filter-btn" data-filter="concepts">Concepts</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Artwork items will be loaded dynamically from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate comic illustrator with a love for bringing characters and stories to life through visual art. My work spans from character design to full scene illustrations, each piece crafted with attention to detail and storytelling.</p>
+                    <p>With years of experience in digital illustration, I specialize in creating dynamic compositions that capture emotion and movement. Whether it's a single character portrait or a complex scene, my goal is always to create artwork that resonates with viewers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Interested in commissioning artwork or have a project in mind? I'd love to hear from you!</p>
+                <div class="contact-links">
+                    <a href="mailto:artist@example.com" class="contact-link">
+                        <span class="contact-icon">✉</span>
+                        artist@example.com
+                    </a>
+                    <a href="https://twitter.com/artist" target="_blank" class="contact-link">
+                        <span class="contact-icon">🐦</span>
+                        Twitter
+                    </a>
+                    <a href="https://instagram.com/artist" target="_blank" class="contact-link">
+                        <span class="contact-icon">📷</span>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Comic Artist Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+                <p class="lightbox-date" id="lightboxDate"></p>
+            </div>
+        </div>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Warrior Princess",
+        "description": "A fierce warrior princess ready for battle. Digital illustration featuring dynamic pose and detailed armor design.",
+        "image": "https://via.placeholder.com/400x300/6366f1/ffffff?text=Warrior+Princess",
+        "category": "characters",
+        "date": "2024-01-15"
+    },
+    {
+        "id": 2,
+        "title": "Cyberpunk Street",
+        "description": "A neon-lit street scene in a cyberpunk city. Capturing the atmosphere of a dystopian future with vibrant colors.",
+        "image": "https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Cyberpunk+Street",
+        "category": "scenes",
+        "date": "2024-02-20"
+    },
+    {
+        "id": 3,
+        "title": "Dragon Sketch",
+        "description": "Early concept sketch of a majestic dragon. Exploring different wing designs and scale patterns.",
+        "image": "https://via.placeholder.com/400x300/ec4899/ffffff?text=Dragon+Sketch",
+        "category": "concepts",
+        "date": "2024-03-10"
+    },
+    {
+        "id": 4,
+        "title": "Space Explorer",
+        "description": "A brave astronaut exploring distant planets. Character design with detailed space suit and equipment.",
+        "image": "https://via.placeholder.com/400x300/10b981/ffffff?text=Space+Explorer",
+        "category": "characters",
+        "date": "2024-03-25"
+    },
+    {
+        "id": 5,
+        "title": "Enchanted Forest",
+        "description": "A mystical forest filled with magic and wonder. Background painting with atmospheric lighting and rich details.",
+        "image": "https://via.placeholder.com/400x300/f59e0b/ffffff?text=Enchanted+Forest",
+        "category": "scenes",
+        "date": "2024-04-05"
+    },
+    {
+        "id": 6,
+        "title": "Robot Companion",
+        "description": "Friendly robot character design. Concept art exploring mechanical details and personality through design.",
+        "image": "https://via.placeholder.com/400x300/3b82f6/ffffff?text=Robot+Companion",
+        "category": "concepts",
+        "date": "2024-04-18"
+    },
+    {
+        "id": 7,
+        "title": "Ninja Assassin",
+        "description": "Stealthy ninja character in action pose. Dynamic composition with flowing fabric and dramatic shadows.",
+        "image": "https://via.placeholder.com/400x300/ef4444/ffffff?text=Ninja+Assassin",
+        "category": "characters",
+        "date": "2024-05-02"
+    },
+    {
+        "id": 8,
+        "title": "Underwater Kingdom",
+        "description": "An ancient underwater civilization. Full scene illustration with architectural details and marine life.",
+        "image": "https://via.placeholder.com/400x300/06b6d4/ffffff?text=Underwater+Kingdom",
+        "category": "scenes",
+        "date": "2024-05-20"
+    },
+    {
+        "id": 9,
+        "title": "Creature Studies",
+        "description": "Various creature design explorations. Sketches and concepts for fantasy beasts and monsters.",
+        "image": "https://via.placeholder.com/400x300/a855f7/ffffff?text=Creature+Studies",
+        "category": "concepts",
+        "date": "2024-06-01"
+    }
+]
